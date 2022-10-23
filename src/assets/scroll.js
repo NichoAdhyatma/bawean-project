@@ -19,17 +19,14 @@ $(window).bind("mousewheel", function (event) {
       console.log("Scroll down");
     }
   }
-  
-  if($('#yscroll').scrollLeft() >= 1030) {
-    $('#header').show()
-    $('#content').show()
-  }
-  else {
-    $('#header').hide()
-    $('#content').hide()
+
+  if ($("#yscroll").scrollLeft() >= $(window).width()) {
+    $("#header").show();
+    $("#content").show();
+  } else {
+    $("#header").hide();
+    $("#content").hide();
   }
 
-  console.log($('#yscroll').scrollLeft())
-
+  console.log($("#yscroll").scrollLeft());
 });
-
