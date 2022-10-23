@@ -9,7 +9,8 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 import "./assets/main.css";
 import AOS from "aos";
 import 'aos/dist/aos.css';
-
+import "@/assets/jquery.min";
+import "./assets/scroll"
 
 const app = createApp(App);
 AOS.init();

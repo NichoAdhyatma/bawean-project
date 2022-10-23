@@ -1,20 +1,44 @@
-@import './base.css';
+@import "./base.css";
 
 #app {
   margin: 0 auto;
   font-weight: normal;
 }
 
-#landing-bg {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/bawean-photo-1.jpg');
+.container-bg {
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-y: hidden;
+}
+
+#bg-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/bawean-photo-2.jpg");
+}
+
+.landing-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../assets/bawean-photo-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  width: 100%;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(155, 153, 153);
+  border-radius: 10px;
+}
 
 a,
 .green {
@@ -28,5 +52,3 @@ a,
     background-color: hsla(160, 100%, 37%, 0.2);
   }
 }
-
-

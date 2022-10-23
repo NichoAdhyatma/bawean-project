@@ -14,6 +14,7 @@
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.2.2",
     "bootstrap-vue": "^2.22.0",
+    "jquery": "^3.6.1",
     "oh-vue-icons": "^1.0.0-rc3",
     "pinia": "^2.0.23",
     "vue": "^3.2.41",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/aos": "^3.0.4",
+    "@types/jquery": "^3.5.14",
     "@types/jsdom": "^20.0.0",
     "@types/node": "^16.11.68",
     "@vitejs/plugin-vue": "^3.1.2",

@@ -5,17 +5,29 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <template >
 
-  <div data-aos="fade-up" class="navbar navbar-light bg-light p-2 justify-content-center gap-5 sticky-top mw-100">
+  <div id="yscroll" class="container-bg">
+    <div id="bg-1" class="landing-bg d-flex justify-content-center align-items-center">
+      <h1 class="text-white">Bawean</h1>
+    </div>
+    <div id="bg-2" class="landing-bg d-flex justify-content-center align-items-center">
+      <h1 class="text-white">Bawean Island</h1>
+    </div>
+  </div>
+
+  <div id="header" data-aos="fade-up" class="navbar navbar-light bg-light p-2 justify-content-center gap-5 sticky-top mw-100">
     <v-icon name="gi-island" scale="2" />
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/about">About</RouterLink>
   </div>
 
-  <RouterView />
+  <div id="content">
+    <RouterView />
 
-  <footer data-aos="fade-right">
-    <h2 class="text-center py-5">Footer</h2>
-  </footer>
+    <footer id="footer" data-aos="fade-right">
+      <h2 class="text-center py-5">Footer</h2>
+    </footer>
+  </div>
+
 </template>
 
 <style scoped>
