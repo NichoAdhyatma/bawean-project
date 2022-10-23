@@ -5,6 +5,7 @@
 // window.onscroll = scrollFunction;
 var pos = 0;
 
+
 $(window).bind("mousewheel", function (event) {
   if (event.originalEvent.wheelDelta >= 0) {
     if (0 < pos) {
@@ -21,7 +22,6 @@ $(window).bind("mousewheel", function (event) {
   if ($("#yscroll").scrollLeft() >= $(window).width()) {
     $("#header").show();
     $("#content").show();
-    console.log("ok");
   } else {
     $("#header").hide();
     $("#content").hide();

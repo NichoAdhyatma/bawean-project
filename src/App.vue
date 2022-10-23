@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
-<template >
+<template>
 
   <div id="yscroll" class="container-bg">
     <div id="bg-1" class="landing-bg d-flex justify-content-center align-items-center">
