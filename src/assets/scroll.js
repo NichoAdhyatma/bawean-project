@@ -6,7 +6,7 @@
 var pos = 0;
 
 
-$(window).bind("mousewheel", function (event) {
+$(window).bind("mousewheel scroll", function (event) {
   if (event.originalEvent.wheelDelta >= 0) {
     if (0 < pos) {
       pos -= 400;
