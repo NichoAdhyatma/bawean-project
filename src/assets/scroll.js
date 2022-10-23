@@ -6,7 +6,7 @@
 var pos = 0;
 
 
-$(window).bind("mousewheel scroll", function (event) {
+$(window).bind("mousewheel touchmove", function (event) {
   if (event.originalEvent.wheelDelta >= 0) {
     if (0 < pos) {
       pos -= 400;
@@ -22,8 +22,12 @@ $(window).bind("mousewheel scroll", function (event) {
   if ($("#yscroll").scrollLeft() >= $(window).width()) {
     $("#header").show();
     $("#content").show();
+    $('body').css('overflow', 'visible')
   } else {
-    $("#header").hide();
-    $("#content").hide();
+    $("#header").hide(500);
+    $("#content").hide(500);
   }
+
 });
+
+
