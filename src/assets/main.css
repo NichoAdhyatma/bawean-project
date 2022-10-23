@@ -12,21 +12,14 @@
   overflow-y: hidden;
 }
 
-#bg-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/bawean-photo-2.jpg");
-}
-
-#bg-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/bawean-photo-2.jpg");
-}
-
 .landing-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../assets/bawean-photo-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  width: 100%;
   min-height: 100vh;
   min-width: 100vw;
 }
