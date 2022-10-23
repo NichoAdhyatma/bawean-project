@@ -10,23 +10,20 @@ $(window).bind("mousewheel", function (event) {
     if (0 < pos) {
       pos -= 400;
       $("#yscroll").scrollLeft(pos);
-      console.log("Scroll up");
     }
   } else {
     if ($(window).width() > pos) {
       pos += 400;
       $("#yscroll").scrollLeft(pos);
-      console.log("Scroll down");
     }
   }
 
   if ($("#yscroll").scrollLeft() >= $(window).width()) {
     $("#header").show();
     $("#content").show();
+    console.log("ok");
   } else {
     $("#header").hide();
     $("#content").hide();
   }
-
-  console.log($("#yscroll").scrollLeft());
 });
